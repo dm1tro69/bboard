@@ -1,0 +1,14 @@
+{% extends 'layot/basic.html' %}
+{% block title %}
+Профиль пользователя
+{% endblock %}
+{% block content %}
+<h2>Профиль пользователя</h2>
+    {% if user.first_name and user.last_name %}
+    <p>Здравствуйте {{ user.first_name }} {{ user.last_name }}!</p>
+        {% else %}
+        <p>Здравствуйте</p>
+
+    {% endif %}
+    <p>Ващи обьявления</p>
+{% endblock %}
