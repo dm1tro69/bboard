@@ -62,7 +62,7 @@ class SubRubric(Rubric):
     objects = SuperRubricManager()
 
     def __str__(self):
-        return '{}-{}'.format(self.super_rubric.name, self.name)
+        return '{}-{}'.format(self.super_rubric, self.name)
 
     class Meta:
         proxy = True

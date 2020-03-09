@@ -5,4 +5,10 @@ header hl {
 .root {
     font-size: larger;
 }
+img.main-image {
+    width: 300px;
+}
+img.additional-img{
+    width: 180px;
+}
 
